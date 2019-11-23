@@ -13,6 +13,7 @@
     Add Item
 </div>
 <div class="card-body">
+
     @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -47,6 +48,7 @@
                 <option value="0">Masculino</option>
                 <option value="1">Femenino</option>
             </select>
+        <br>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 </div>
