@@ -26,4 +26,5 @@ Route::get('/index', function () {
 Route::get('form', 'FormController@index')->name('form.index');
 Route::get('/', 'FormController@index');
 Route::post('/form/{id}', 'FormController@update');
+Route::post('form', 'FormController@changeLang')->name('form.change');
 Route::resource('form', 'FormController');

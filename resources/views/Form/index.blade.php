@@ -10,17 +10,17 @@
 </style>
 <div class="card uper">
 <div class="card-header">
-    Usuarios
+    {{trans('words.users')}}
 </div>
 <div class="card-body">
 <table id="mytable" class="table table-bordred table-striped">
     <thead>
         <th>ID</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Email</th>
-        <th>Genero</th>
-        <th>Cedula</th>
+        <th>{{trans('words.name')}}</th>
+        <th>{{trans('words.last_name')}}</th>
+        <th>{{trans('words.email')}}</th>
+        <th>{{trans('words.gender')}}</th>
+        <th>{{trans('words.scheduled')}}</th>
         <th></th>
         <th></th>
     </thead>
@@ -55,7 +55,8 @@
     </tbody>
 </table>
     
-   <a class="btn btn-primary" href="{{ route('form.create') }}">Añadir nuevo usuario</a>
+   <a class="btn btn-primary" href="{{ route('form.create') }}">{{trans('words.add_user')}}</a>
+   
 </div>
 
 </div>
