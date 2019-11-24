@@ -100,6 +100,8 @@ class FormController extends Controller
      */
     public function destroy($id)
     {
-        //
+        echo $id;
+        \App\Form::find($id)->delete();
+        return redirect()->route('form.index')->with('success','Registro eliminado satisfactoriamente');
     }
 }

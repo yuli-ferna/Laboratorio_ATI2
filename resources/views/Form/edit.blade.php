@@ -45,8 +45,13 @@
             <label for="Genero">Género</label>
             <select name="Genero" class="form-control  col-md-3" id="Genero">
                 <option value="">Selecciona tu género</option>
-                <option value="0">Masculino</option>
+                @if($form->Genero == 0)
+                <option value="0" selected>Masculino</option>
                 <option value="1">Femenino</option>
+                @else
+                <option value="0">Masculino</option>
+                <option value="1" selected>Femenino</option>
+                @endif
             </select>
         <br>
         <!-- <button type="submit" class="btn btn-primary">Enviar</button>

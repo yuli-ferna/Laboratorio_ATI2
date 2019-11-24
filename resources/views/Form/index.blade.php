@@ -43,7 +43,11 @@
                <a class="btn btn-primary" href="{{ action('FormController@edit', $form->id )}}"><i class="fas fa-pen"></i></a>            
             </td>
             <td>
-            <a class="btn btn-danger" href="{{ action('FormController@edit', $form->id )}}"><i class="fas fa-minus-circle"></i></a>                        
+                <form action="{{action('FormController@destroy', $form->id)}}" method="post">
+                {{csrf_field()}}
+                @method('DELETE')
+                <button class="btn btn-danger btn-xs" type="submit"><span class="fas fa-minus-circle"></span></button>      
+                </form>         
             </td>
             </tr>
         @endforeach
