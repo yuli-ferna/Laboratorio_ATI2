@@ -11,7 +11,7 @@
 </style>
 <div class="card uper">
 <div class="card-header">
-    {{trans('words.add_user')}}
+    {{__('words.add_user')}}
 </div>
 <div class="card-body">
 
@@ -27,39 +27,37 @@
     <form method="post" action="{{ route('form.update', $form->id) }}">
         <div class="form-group">
             @csrf
-            <label for="Nombre">{{trans('words.name')}}</label>
+            <label for="Nombre">{{__('words.name')}}</label>
             <input type="text" class="form-control" name="Nombre" value="{{$form->Nombre}}"/>
         </div>
         <div class="form-group">
-            <label for="Apellido">{{trans('words.last_name')}}</label>
+            <label for="Apellido">{{__('words.last_name')}}</label>
             <input type="text" class="form-control" name="Apellido"  value="{{$form->Apellido}}"/>
         </div>
         <div class="form-group">
-            <label for="Email">{{trans('words.email')}}</label>
+            <label for="Email">{{__('words.email')}}</label>
             <input type="text" class="form-control" name="Email"  value="{{$form->Email}}"/>
         </div>
         <div class="form-group">
             @csrf
-            <label for="Cedula">{{trans('words.scheduled')}}</label>
+            <label for="Cedula">{{__('words.scheduled')}}</label>
             <input type="text" class="form-control" name="Cedula"  value="{{$form->Cedula}}"/>
         </div>
-            <label for="Genero">{{trans('words.gender')}}</label>
+            <label for="Genero">{{__('words.gender')}}</label>
             <select name="Genero" class="form-control  col-md-3" id="Genero">
-                <option value="">{{trans('words.select_gender')}}</option>
+                <option value="">{{__('words.select_gender')}}</option>
                 @if($form->Genero == 0)
-                <option value="0" selected>{{trans('words.male')}}</option>
-                <option value="1">{{trans('words.female')}}</option>
+                <option value="0" selected>{{__('words.male')}}</option>
+                <option value="1">{{__('words.female')}}</option>
                 @else
-                <option value="0">{{trans('words.male')}}</option>
-                <option value="1" selected>{{trans('words.female')}}</option>
+                <option value="0">{{__('words.male')}}</option>
+                <option value="1" selected>{{__('words.female')}}</option>
                 @endif
             </select>
         <br>
-        <!-- <button type="submit" class="btn btn-primary">Enviar</button>
-         -->
 
-            <input type="submit"  value="{{trans('words.update')}}" class="btn btn-success btn-block">
-            <a href="{{ route('form.index') }}" class="btn btn-info btn-block" >{{trans('words.back')}}</a>
+            <input type="submit"  value="{{__('words.update')}}" class="btn btn-success btn-block">
+            <a href="{{ route('form.index') }}" class="btn btn-info btn-block" >{{__('words.back')}}</a>
         	
 
     </form>

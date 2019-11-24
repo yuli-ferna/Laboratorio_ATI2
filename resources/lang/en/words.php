@@ -12,8 +12,10 @@
         "male" => "Male",
         "female" => "Female",
         "send" => "Send",
-        "update" => "update",
+        "update" => "Update",
         "add_user" => "Add new user",
-        "change_lang" => "Change language"
+        "change_lang" => "Change language",
+        "lab" => "Laboratory",
+        "home" => "Home"
     ];
 ?> 

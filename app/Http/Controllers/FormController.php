@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function changeLang($lang)
-    {
-        App::setLocale($lang);
-    }
     /**
      * Display a listing of the resource.
      *

@@ -14,6 +14,8 @@
         "back" => "Atrás",
         "male" => "Masculino",
         "female" => "Femenino",
-        "change_lang" => "Cambiar idioma"
+        "change_lang" => "Cambiar idioma",
+        "lab" => "Laboratorio",
+        "home" => "Inicio"
     ];
 ?> 
